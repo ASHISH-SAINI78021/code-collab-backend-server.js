@@ -5,11 +5,9 @@
   "main": "config.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run dev --prefix ./code-collab",
-    "websocket": "nodemon server.js",
-    "websocket2": "nodemon server2.js",
-    "dev": "concurrently \"npm run server\" \" npm run websocket\" \"npm run client\" "
+    "server": "node index.js",
+    "websocket": "node server.js",
+    "dev": "concurrently \"npm run server\" \" npm run websocket\" "
   },
   "keywords": [],
   "author": "",
